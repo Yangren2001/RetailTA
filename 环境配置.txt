@@ -1,0 +1,19 @@
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+export HADOOP_HOME=/usr/local/hadoop
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_162
+export JRE_HOME=${JAVA_HOME}/jre
+export PATH=.:$HADOOP_HOME/bin:$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+export PATH=${JAVA_HOME}/bin:$PATH
+export TERM=xterm-color
+export PATH=/home/hadoop/.local/bin:$PATH
+export SPARK_HOME=/usr/local/spark
+export PYSPARK_SUBMIT_ARGS="--master local[*] pyspark-shell"
+export SPARK_CONF_DIR=${SPARK_HOME}/conf
+export PATH=$SPARK_HOME/bin:$PATH
+export PYSPARK_SUBMIT_ARGS="--master local[*]"
+export PYTHONPATH=${SPARK_HOME}/python:${SPARK_HOME}/python/lib/py4j-0.10.7    -src.zip
+export PYSPARK_PATHON=python3
+export PYTH=${PYSAPRK_PATHON}:${PATH}
+
